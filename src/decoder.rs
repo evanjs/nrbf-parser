@@ -255,7 +255,7 @@ impl<R: Read> Decoder<R> {
         for i in 0..count {
             let bt = binary_type_enums[i as usize];
             let info = match bt {
-                BinaryType::Primitive => {
+                BinaryType::Primitive | BinaryType::PrimitiveArray => {
                     AdditionalTypeInfo::Primitive(PrimitiveType::try_from(self.read_u8()?)?)
                 }
                 BinaryType::SystemClass => {
