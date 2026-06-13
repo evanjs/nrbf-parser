@@ -1,6 +1,6 @@
 [package]
 name = "nrbf-parser"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 authors = ["driedpampas@proton.me"]
 description = "A high-performance MS-NRBF binary parser and encoder for Rust"
